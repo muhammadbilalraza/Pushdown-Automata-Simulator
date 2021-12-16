@@ -23,10 +23,6 @@ public class FileReader {
 	private List<ArrayList<String>> tTable;
 	private ArrayList<String> inString = new ArrayList<>();
 
-	private int totalLines; 
-	private int transitionTableSize; 
-	private int noOfInputs; 
-
 	//default constructor
 	public FileReader () {	}
 
@@ -75,7 +71,7 @@ public class FileReader {
 
 				if (transitionFlag)
 					setArrayListStr(tTableTemp, temp);
-				
+
 				//reading rest of the inputs
 				if (inputFlag)
 					setArrayListStr(inString, temp);
